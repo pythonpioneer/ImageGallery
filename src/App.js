@@ -1,12 +1,14 @@
 import './App.css';
-import Header from './components/Header';
+import ImageBox from './components/ImageBox';
 import Navbar from './components/Navbar';
 
+
+// writing all components here to render
 function App() {
   return (
     <>
       <Navbar />
-      
+      <ImageBox />
     </>
   );
 }
