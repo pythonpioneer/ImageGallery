@@ -5,7 +5,7 @@ import React from 'react';
 export default function Navbar() {
     return (
         <>
-            <nav className="navbar navbar-expand-lg navbar-light bg-light">
+            <nav className="navbar navbar-expand-lg navbar-light bg-light sticky-top">
                 <div className="container"> {/* Wrap the content in a container */}
                     <a className="navbar-brand" style={{ fontFamily: "Pattaya", fontSize: "30px", fontWeight: "bold", marginBottom: "10px" }} href="#">
                         Image Gallery
