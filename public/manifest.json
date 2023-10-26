@@ -3,17 +3,17 @@
   "name": "Explore Images",
   "icons": [
     {
-      "src": "imgae-gallery.png",
+      "src": "image-gallery.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "imgae-gallery.png",
+      "src": "image-gallery.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "imgae-gallery.png",
+      "src": "image-gallery.png",
       "type": "image/png",
       "sizes": "512x512"
     }
