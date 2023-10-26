@@ -18,3 +18,54 @@ code {
     width: 419px; /* Adjust the width as desired for larger screens */
   }
 }
+
+
+/* Default font sizes */
+.large-text {
+  font-size: 32px;
+}
+
+.small-text {
+  font-size: 14px;
+}
+
+/* Adjust font sizes for small screens (e.g., screens with a maximum width of 768px) */
+@media (max-width: 768px) {
+  .large-text {
+    font-size: 24px;
+  }
+
+  .small-text {
+    font-size: 12px;
+  }
+}
+
+/* Adjust font sizes for extra small screens (e.g., mobile devices) */
+@media (max-width: 480px) {
+  .large-text {
+    font-size: 20px;
+  }
+
+  .small-text {
+    font-size: 10px;
+  }
+}
+
+/* Default placeholder font size */
+input::placeholder {
+  font-size: 14px;
+}
+
+/* Adjust placeholder font size for small screens (e.g., screens with a maximum width of 768px) */
+@media (max-width: 768px) {
+  input::placeholder {
+    font-size: 10px;
+  }
+}
+
+/* Adjust placeholder font size for extra small screens (e.g., mobile devices) */
+@media (max-width: 480px) {
+  input::placeholder {
+    font-size: 10px;
+  }
+}
