@@ -11,3 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Define a media query for larger screens (adjust the breakpoint as needed) */
+@media (min-width: 992px) {
+  .form-inline input[type="search"] {
+    width: 419px; /* Adjust the width as desired for larger screens */
+  }
+}
