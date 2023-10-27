@@ -1,10 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { useTheme } from '../context/themeContext';
 
 // it will contain the image and the information about the image
 export default function ImageProfile() {
+
+  // fetch the values from the theme context
+  const { colorPalletes, theme } = useTheme();
+  const profileBackgroundColor = "#141414";
+
+  // jsx contents
   return (
     <>
-      <div className="card" style={{ maxWidth: "100%" }}>
+      <div className="card" style={{ maxWidth: "100%", backgroundColor: theme === "dark" ? profileBackgroundColor : "#FFFFFF", color: theme === "dark" ? colorPalletes.dark.text : colorPalletes.light.text }}>
         <img className="card-img-bottom mb-1" src="/header.png" alt="Card image cap" />
         <div className="card-body d-flex align-items-center" style={{ padding: '10px' }}>
           <div>

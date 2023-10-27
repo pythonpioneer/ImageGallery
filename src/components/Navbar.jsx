@@ -1,4 +1,3 @@
-import { light } from '@mui/material/styles/createPalette';
 import React, { useState } from 'react';
 import { useTheme } from '../context/themeContext';
 
@@ -10,18 +9,19 @@ export default function Navbar() {
     const { colorPalletes, theme, setTheme } = useTheme();
     const [modeColor, setModeColor] = useState(colorPalletes.light);
 
+    // change the theme of the app
     const handleToggleTheme = () => {
         if (theme === "dark") {
             setTheme("light");
             setModeColor(colorPalletes.light);
+            document.body.style.backgroundColor = colorPalletes.light.background;
         }
         else {
             setTheme("dark");
             setModeColor(colorPalletes.dark);
+            document.body.style.backgroundColor = colorPalletes.dark.background;
         }
     }
-    console.log(modeColor)
-
 
     // return the jsx to render the content
     return (
@@ -60,7 +60,7 @@ export default function Navbar() {
                                         {theme === "light" ? "Dark" : "Light"} Mode
                                     </div>
                                     <div className="custom-control custom-switch nav-link ml-4">
-                                        <input type="checkbox" className="custom-control-input" id="customSwitch1" onClick={handleToggleTheme} defaultunchecked />
+                                        <input type="checkbox" className="custom-control-input" id="customSwitch1" onClick={handleToggleTheme} style={{ outline: 'none' }} defaultunchecked />
                                         <label className="custom-control-label" htmlFor="customSwitch1"></label>
                                     </div>
                                 </div>
