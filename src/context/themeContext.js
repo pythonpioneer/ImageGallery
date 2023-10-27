@@ -14,7 +14,7 @@ export const useTheme = () => {
 };
 
 // now, creating the provider for the app
-export const FetchNoteProvider = (props) => {
+export const ThemeProvider = (props) => {
     return (
 
         // wrapping all childrens props
