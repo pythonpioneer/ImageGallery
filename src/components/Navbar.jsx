@@ -36,7 +36,7 @@ export default function Navbar() {
                     </button>
                     <div className="collapse navbar-collapse justify-content-center ml-4" id="navbarSupportedContent"> {/* Add justify-content-center */}
                         <form className="form-inline my-2 my-lg-0"> {/* Add mr-2 for right margin */}
-                            <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style={{ borderRadius: "10px", backgroundColor: theme == "dark" ? "#4F4F4F" : "#FFFFFF" }} />
+                            <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style={{ borderRadius: "10px", backgroundColor: theme == "dark" ? "#4F4F4F" : "#FFFFFF", color: theme === "dark" && colorPalletes.dark.text }} />
                         </form>
                         <ul className="navbar-nav mr-5" >
                             <li className="nav-item active ml-3">
