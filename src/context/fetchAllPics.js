@@ -13,9 +13,6 @@ export const FetchImageProvider = (props) => {
 
     // access key for the unsplash api
     const API_KEY = "JkvPSgnalbX3LRXHuVaVdQS9wA9qyho36F-OgZZc6qY";  // this must be in .env file, but for assignment it will be here to ease of setup and use
-    
-    // get the list of images using unsplash api
-    const url = `https://api.unsplash.com/photos/?client_id=${API_KEY}`;
 
     // contain all the iamges as array
     const [allImages, setAllImages] = useState([]);
@@ -52,7 +49,7 @@ export const FetchImageProvider = (props) => {
     return (
         
         // wrapping all childrens
-        <FetchImageContext.Provider value={{ allImages }}>
+        <FetchImageContext.Provider value={{ allImages, setAllImages }}>
             {props.children}
         </FetchImageContext.Provider>
     );
