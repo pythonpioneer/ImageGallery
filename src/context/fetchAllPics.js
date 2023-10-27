@@ -52,7 +52,7 @@ export const FetchImageProvider = (props) => {
         const val = 1;  // to increase the page number
 
         // now, fetch the more data from the next page
-        const url = `https://api.unsplash.com/photos/?client_id=JkvPSgnalbX3LRXHuVaVdQS9wA9qyho36F-OgZZc6qY&page=${pageNumber}`;
+        const url = `https://api.unsplash.com/photos/?client_id=${API_KEY}&page=${pageNumber}`;
 
         // now, fetch the images
         axios.get(url)
