@@ -4,12 +4,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ThemeProvider } from './context/themeContext';
+import { FetchImageProvider } from './context/fetchAllPics';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <ThemeProvider>
-      <App />
+      <FetchImageProvider>
+        <App />
+      </FetchImageProvider>
     </ThemeProvider>
   </React.StrictMode>
 );

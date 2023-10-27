@@ -60,7 +60,7 @@ export default function Navbar() {
                                         {theme === "light" ? "Dark" : "Light"} Mode
                                     </div>
                                     <div className="custom-control custom-switch nav-link ml-4">
-                                        <input type="checkbox" className="custom-control-input" id="customSwitch1" onClick={handleToggleTheme} style={{ outline: 'none' }} defaultunchecked />
+                                        <input type="checkbox" className="custom-control-input" id="customSwitch1" onClick={handleToggleTheme} style={{ outline: 'none' }} defaultChecked={false} />
                                         <label className="custom-control-label" htmlFor="customSwitch1"></label>
                                     </div>
                                 </div>
